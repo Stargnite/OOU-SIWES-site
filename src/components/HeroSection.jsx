@@ -1,6 +1,5 @@
 import React from "react";
-import HeroImg from "../assets/images/hero-img.jpg"
-
+import HeroImg from "../assets/images/hero-img.jpg";
 
 const HeroSection = () => {
   return (
@@ -10,14 +9,15 @@ const HeroSection = () => {
         backgroundImage: `url(${HeroImg})`, // Replace with your image URL
       }}
     >
-			<div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-			<div className="relative flex items-center justify-center h-full">
-        <h1 className="text-white text-6xl font-bold sm:text-8xl lg:text-9xl">
-          Welcome
+      <div className="relative flex items-center justify-center h-full">
+        <h1 className="text-white text-2xl text-center font-bold sm:text-8xl lg:text-5xl container">
+          STUDENTS’ INDUSTRIAL WORK EXPERIENCE SCHEME (SIWES) AT OLABISI
+          ONABANJO UNIVERSITY, AGO-IWOYE
         </h1>
       </div>
-		</div>
+    </div>
   );
 };
 
