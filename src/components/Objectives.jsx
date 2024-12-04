@@ -2,9 +2,9 @@ import React from "react";
 
 const Objectives = () => {
   return (
-    <section className="flex flex-col text-center justify-center py-24 space-y-10">
+    <section className="flex flex-col text-center justify-center py-24 space-y-10" id="objectives">
       <div className="space-y-5">
-        <h1 className="font-bold text-4xl">OBJECTIVES OF THE SIWES PROGRAM</h1>
+        <h1 className="font-bold text-4xl px-60">OBJECTIVES OF THE SIWES IN OLABISI ONABANJO UNIVERSITY, AGO-IWOYE</h1>
         <p>
           The objective of the Student Industrial Work Experience Scheme (SIWES)
           are to:

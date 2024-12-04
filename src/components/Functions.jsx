@@ -2,8 +2,8 @@ const Functions = () => {
   return (
     <section className="flex flex-col text-center justify-center py-24 space-y-10 bg-[#000016] text-white">
       <div className="space-y-5">
-        <h1 className="font-bold text-4xl">
-          FUNCTIONS OF THE SIWES DIRECTORATE
+        <h1 className="font-bold text-4xl px-60">
+          FUNCTIONS OF THE SIWES DIRECTORATE IN OLABISI ONABANJO UNIVERSITY. AGO-IWOYE
         </h1>
         <p>The Directorate is mandated to carry out the following functions:</p>
       </div>
