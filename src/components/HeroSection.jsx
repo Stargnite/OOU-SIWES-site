@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       <div className="relative flex items-center justify-center h-full">
-        <h1 className="text-white text-2xl text-center font-bold sm:text-8xl lg:text-5xl container">
+        <h1 className="text-white text-2xl px-6 text-center font-bold md:text-4xl lg:text-5xl container">
           STUDENTS’ INDUSTRIAL WORK EXPERIENCE SCHEME (SIWES) AT OLABISI
           ONABANJO UNIVERSITY, AGO-IWOYE
         </h1>
