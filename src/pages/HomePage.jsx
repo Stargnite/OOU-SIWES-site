@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSection from "../components/HeroSection";
 import VCIntro from "../components/VCIntro";
 import DirectorIntro from "../components/DirectorIntro";

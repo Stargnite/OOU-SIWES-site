@@ -9,7 +9,7 @@ const NavBar = () => {
 
   return (
     <div className="flex items-center z-10 justify-between p-3 px-10 bg-[#000016]">
-      <img src={logo} alt="OOU-logo" />
+      <img src={logo} alt="OOU-logo" className="max-w-[150px]" />
       <nav className="hidden md:flex list-none gap-10 font-semibold text-white -ml-40">
         <li className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all">
           <Link to="/">Home</Link>

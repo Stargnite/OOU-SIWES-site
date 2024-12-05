@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../components/Card";
 
 const formsData = [
@@ -21,7 +20,7 @@ const PlacementFormPage = () => {
             CHOOSE YOUR SIWES DURATION
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center">
           {formsData.map((form, index) => (
             <div className="" key={index}>
               <Card link={form.link} title={form.title} />

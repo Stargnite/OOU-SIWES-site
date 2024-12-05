@@ -1,18 +1,16 @@
-import React from "react";
-
 const Objectives = () => {
   return (
-    <section className="flex flex-col text-center justify-center py-24 space-y-10" id="objectives">
-      <div className="space-y-5">
-        <h1 className="font-bold text-4xl px-60">OBJECTIVES OF THE SIWES IN OLABISI ONABANJO UNIVERSITY, AGO-IWOYE</h1>
-        <p>
+    <section className="flex flex-col text-center justify-center py-12 md:py-24 space-y-5 md:space-y-10" id="objectives">
+      <div className="space-y-2 md:space-y-5">
+        <h1 className="font-bold sm:text-lg md:text-4xl px-14 md:px-30 lg:px-60">OBJECTIVES OF THE SIWES IN OLABISI ONABANJO UNIVERSITY, AGO-IWOYE</h1>
+        <p className="px-10 md:px-0 text-sm md:text-base">
           The objective of the Student Industrial Work Experience Scheme (SIWES)
           are to:
         </p>
       </div>
 
-      <div className="flex justify-center space-x-10">
-        <ul className="list-disc text-start space-y-3 max-w-[400px]">
+      <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 justify-center px-2 md:px-7 md:space-x-10">
+        <ul className="list-disc text-start space-y-3 max-w-full px-10 md:px-0 md:max-w-[400px]">
           <li>
             Provide an avenue for students in Olabisi Onabanjo University,
             Ago-Iwoye to acquire industrial skills and experience in their
@@ -28,7 +26,7 @@ const Objectives = () => {
           </li>
         </ul>
 
-        <ul className="list-disc text-start space-y-3 max-w-[400px]">
+        <ul className="list-disc text-start space-y-3 max-w-full px-10 md:px-0 md:max-w-[350px]">
           <li>
             Make the transition from the university to the world of work easier,
             and thus enhance students’ contacts for later job placement

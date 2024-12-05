@@ -1,15 +1,18 @@
-const Functions = () => {
+const Objectives = () => {
   return (
-    <section className="flex flex-col text-center justify-center py-24 space-y-10 bg-[#000016] text-white">
-      <div className="space-y-5">
-        <h1 className="font-bold text-4xl px-60">
-          FUNCTIONS OF THE SIWES DIRECTORATE IN OLABISI ONABANJO UNIVERSITY. AGO-IWOYE
+    <section className="flex flex-col text-center justify-center py-12 md:py-24 space-y-5 md:space-y-10 bg-[#000016] text-white">
+      <div className="space-y-2 md:space-y-5">
+        <h1 className="font-bold sm:text-lg md:text-4xl px-14 md:px-30 lg:px-60">
+          FUNCTIONS OF THE SIWES DIRECTORATE IN <br /> OLABISI ONABANJO UNIVERSITY.
+          AGO-IWOYE
         </h1>
-        <p>The Directorate is mandated to carry out the following functions:</p>
+        <p className="px-10 md:px-0 text-sm md:text-base">
+          The Directorate is mandated to carry out the following functions:
+        </p>
       </div>
 
-      <div className="flex justify-center space-x-10">
-        <ul className="list-disc text-start space-y-3 max-w-[400px]">
+      <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 justify-center px-2 md:px-7 md:space-x-10">
+        <ul className="list-disc text-start space-y-3 max-w-full px-10 md:px-0 md:max-w-[400px]">
           <li>
             Seeking of industrial placement for students enrolled in various
             disciplines scheduled for participation in SIWES.
@@ -23,13 +26,9 @@ const Functions = () => {
             attachment reports upon which is based on the Federal Government
             funding of supervision and students’ allowances
           </li>
-          <li>
-            Fostering of close links between Olabisi Onabanjo University and
-            industries participating in SIWES programme.
-          </li>
         </ul>
 
-        <ul className="list-disc text-start space-y-3 max-w-[400px]">
+        <ul className="list-disc text-start space-y-3 max-w-full px-10 md:px-0 md:max-w-[350px]">
           <li>
             Provision of advisory guidance to participating students on career
             employment opportunities.
@@ -49,4 +48,4 @@ const Functions = () => {
   );
 };
 
-export default Functions;
+export default Objectives;
