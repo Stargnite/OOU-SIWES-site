@@ -16,7 +16,7 @@ const PlacementFormPage = () => {
     <div className="mx-auto flex items-center justify-center text-center py-12">
       <div className="">
         <div className="pb-12">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-700">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-700 px-5">
             CHOOSE YOUR SIWES DURATION
           </h1>
         </div>
