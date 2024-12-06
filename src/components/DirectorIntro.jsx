@@ -1,4 +1,4 @@
-import ProfPic from "../assets/images/prof-pic.png";
+import ProfPic from "./../assets/images/prof-pic.png";
 
 const DirectorIntro = () => {
   return (

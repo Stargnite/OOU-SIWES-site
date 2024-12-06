@@ -1,4 +1,4 @@
-import VCImg from "../assets/images/VC-pic.jpg";
+import VCImg from "./../assets/images/VC-pic.jpg";
 
 const VCIntro = () => {
   return (
