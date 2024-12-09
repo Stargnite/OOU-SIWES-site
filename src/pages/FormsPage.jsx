@@ -30,8 +30,8 @@ const formsData = [
     link: "/siwes-program-report-sheet.pdf",
   },
   {
-    title: "Directorate of ITF headquarters",
-    link: "/directorate-of-ITF-headquarters.pdf",
+    title: "Directory of ITF headquarters",
+    link: "/directory-of-ITF-headquarters.pdf",
   },
   {
     title: "students commencement of attachment form",
