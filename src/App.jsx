@@ -2,7 +2,7 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import DirectoratesPage from "./pages/DirectoratesPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import PlacementFormPage from "./pages/PlacementFormPage";
+import FormsPage from "./pages/FormsPage";
 import NavBar from "./components/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -17,7 +17,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/directorates" element={<DirectoratesPage />} />
-              <Route path="/forms" element={<PlacementFormPage />} />
+              <Route path="/forms" element={<FormsPage />} />
             </Routes>
           </div>
         </div>
