@@ -3,9 +3,28 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
+
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const navigate = useNavigate();
+  
+  const handleNavigation = (e, path) => {
+    e.preventDefault(); // Prevent default link behavior
+  
+    if (path === "/#objectives") {
+      navigate("/"); // Navigate to home
+      setTimeout(() => {
+        const element = document.getElementById("objectives");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" }); // Scroll to the section
+        }
+      }, 100); // Delay to ensure navigation is complete
+    } else {
+      navigate(path);
+    }
+  };
 
   return (
     <div className="flex items-center z-10 justify-between p-3 px-10 bg-[#000016] fixed w-full max-w-[1700px] shadow-lg">
@@ -14,22 +33,24 @@ const NavBar = () => {
         <li className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all">
           <Link to="/">Home</Link>
         </li>
-        <a
-          className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all"
-          href="#objectives"
-        >
-          Objectives
-        </a>
         <li className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all">
           <Link to="/directorates">Directorates</Link>
         </li>
         <li className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all">
+          <Link
+            to="/#objectives"
+            onClick={(e) => handleNavigation(e, "/#objectives")}
+          >
+            Objectives
+          </Link>
+        </li>
+        <li className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all">
           <Link to="/forms">Placement Form</Link>
         </li>
-        {/* <li className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all">
+      </nav>
+      {/* <li className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all">
               <Link to="/">News and Updates</Link>
             </li> */}
-      </nav>
       <div
         onClick={() => setNav(!nav)}
         className="flex md:hidden cursor-pointer text-white"
@@ -55,7 +76,10 @@ const NavBar = () => {
             <IoClose size={30} onClick={() => setNav(false)} />
           </div>
           <nav className="mt-20 flex flex-col list-none w-full items-start text-lg font-semibold space-y-7 px-5">
-            <li onClick={() => setNav(false)} className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all">
+            <li
+              onClick={() => setNav(false)}
+              className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all"
+            >
               <Link to="/">Home</Link>
             </li>
             <li onClick={() => setNav(false)}>
@@ -66,10 +90,16 @@ const NavBar = () => {
                 Objectives
               </a>
             </li>
-            <li onClick={() => setNav(false)} className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all">
+            <li
+              onClick={() => setNav(false)}
+              className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all"
+            >
               <Link to="/directorates">Directorates</Link>
             </li>
-            <li onClick={() => setNav(false)} className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all">
+            <li
+              onClick={() => setNav(false)}
+              className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all"
+            >
               <Link to="/forms">Placement Form</Link>
             </li>
           </nav>

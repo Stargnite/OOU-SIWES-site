@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FormsPage from "./pages/FormsPage";
 import NavBar from "./components/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
+import Objectives from "./components/Objectives";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/directorates" element={<DirectoratesPage />} />
               <Route path="/forms" element={<FormsPage />} />
+              <Route path="/#objectives" element={<Objectives />} />
             </Routes>
           </div>
         </div>

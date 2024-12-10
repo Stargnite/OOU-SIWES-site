@@ -3,11 +3,11 @@ import Card from "../components/Card";
 const formsData = [
   {
     title: "Sign up for the 3 months program",
-    link: "#",
+    link: "",
   },
   {
     title: "Sign up for the 6 months program",
-    link: "#",
+    link: "",
   },
   {
     title: "SIWES proposal letter",
@@ -44,6 +44,10 @@ const FormsPage = () => {
 
   const handleDownload = (pdfUrl) => {
     // Create a temporary <a> element for triggering the download
+    if(pdfUrl === "") {
+      alert("Form not added yet, please check back later.")
+      return;
+    }
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "SIWES-form.pdf"; // Name of the downloaded file
