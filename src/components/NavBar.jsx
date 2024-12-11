@@ -9,10 +9,10 @@ import { useNavigate } from "react-router-dom";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const navigate = useNavigate();
-  
+
   const handleNavigation = (e, path) => {
     e.preventDefault(); // Prevent default link behavior
-  
+
     if (path === "/#objectives") {
       navigate("/"); // Navigate to home
       setTimeout(() => {
@@ -82,13 +82,15 @@ const NavBar = () => {
             >
               <Link to="/">Home</Link>
             </li>
-            <li onClick={() => setNav(false)}>
-              <a
-                className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all"
-                href="#objectives"
+            <li
+              onClick={() => setNav(false)}
+              className="cursor-pointer hover:text-yellow-400 ease-in-out transition-all">
+              <Link
+                to="/#objectives"
+                onClick={(e) => handleNavigation(e, "/#objectives")}
               >
                 Objectives
-              </a>
+              </Link>
             </li>
             <li
               onClick={() => setNav(false)}
